@@ -36,7 +36,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"> -->
-
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/83d1f201.vendor.css"/>
 
     <!--[if IE 8]>
@@ -68,7 +68,7 @@
     }
     </style>
 
-    <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
+    <script src="http://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
     <script src="scripts/vendor/807c6308.modernizr.js"></script>
   </head>
   <body>
@@ -96,7 +96,7 @@
               <path d="M26.044,71.641v7.874h7.876v-7.874H26.044z M27.224,78.322v-5.51h5.514v5.51H27.224z" class="cbox"/>
             </g>
           </svg>
-        Visual Designers Checklist for the Web</h1>
+        Чеклист пожеланий для наших дизайнеров</h1>
 
         <div class="scroll-arrow">
           <a href="#content">
@@ -130,402 +130,319 @@
                 <desc id="info-desc">An SVG icon indicating additional information before users begin.</desc>
                 <path d="M49.539,0C22.188-0.01,0.018,22.381,0,50.023c0.018,27.601,22.188,49.993,49.539,49.979  c27.344,0.014,49.518-22.378,49.541-49.979C99.057,22.381,76.883-0.01,49.539,0z M49.512,21.634c4.372,0,7.922,3.546,7.922,7.922  s-3.55,7.923-7.922,7.923c-4.38,0-7.927-3.547-7.927-7.923S45.132,21.634,49.512,21.634z M61.117,74.787H38.169v-3.922h3.342  c0.48,0,0.873-0.396,0.873-0.881V44.711c0-0.484-0.389-0.881-0.873-0.881h-3.342v-3.795h18.466v29.567  c0,0.696,0.396,1.263,0.881,1.263h3.602V74.787z"/>
               </svg>
-              Before you Start
+              Перед тем как начать
             </h2>
-
-            <p class="deck">These are merely suggestions for your workflow. Feel free to contribute on <a href="//github.com/grayghostvisuals/webdesignerschecklist">GitHub</a> or make a fork and create your own unique workflow checklist. This list is meant for visual designers working within a team setting where visual comps and exploration will be shared with a developer. Checkboxes are persistent (<em>they won't uncheck on refresh</em>) where <a href="http://caniuse.com/#search=localstorage">localstorage</a> is supported.</p>
+            <p class="deck">
+              Над всеми пожеланиями стоит одно требование "Думайте своей головой".
+            </p>
           </div>
 
           <form action="/" id="wdc-form" data-persist="garlic" data-destroy="false" method="post">
             <!-- $File Org -->
             <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">External File Organization</h3></li>
+              <li class="list__head"><h3 class="list__title">Шрифты</h3></li>                           
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Consolidated Assets
+                  Уровни заголовков
                 </label>
+              </li>
+              <li>
+                <p>
+                  Мы имеем 6 уровней заголовков (h1,h2...h6). По умолчанию h1 это имя страницы, на главной это обычно имя Компании/события/акции/сео трюк.
+                  Хотелось бы чтобы было ограничение по заголовкам, чтобы они использовались повторно. Плохо когда на главной одни заголовки по стилю, в трех блоках разные заголовки, а на внутренних другие. Для контента вполне приемлемы отдельные заголовки, т.к. его должны прочитать.
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Named Files Appropriately
+                  Лицензированные шрифты [<a href="http://ilovepsd.ru/">ilovepsd</a>]
                 </label>
+              </li>
+              <li>
+                <p>
+                  Я лично против воровства цифрового контента, т.к. сам его создаю. Если шрифт преобретен/будет приобретен, то ложите его в папочку рядом с дизайном. Зачастую ворованные шрифты идут бандлами на торрентах и это очень затрудняет поиски, учитывая что недалеко имеется файл шрифта.
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Assets are Relative to Comp File
+                  Кастомных шрифтов(с начертаниями) не более четырех.
                 </label>
+              </li> 
+              <li>
+                <p>Надпись, для которой использован особый шрифт и она не меняется, не считать.</p>
+              </li>             
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Для всех надписей есть воздух
+                </label>
+              </li>
+              <li>
+                <p>
+                  Очевидное, может добавится пункт в горизонтальном меню.
+                  Шрифты в разных ОС и в разных браузерах рендерятся по разному, в каком-то надпись может стать жирнее, поэтому недопустимо, чтобы размер кнопки был впритык.
+                  Разные языки так же в этом пункте.
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  UI Elements Templated
+                  Установленны целые значения кегля 
                 </label>
+              </li>
+              <li>
+                <p>К сожалению браузеры рендерят шрифты только в целых значениях. Тем более что в разных ОС и браузерах отличия все равно будут. В <a href="http://www.artlebedev.ru/kovodstvo">ководстве</a> указанны только относительные размеры кегля.</p>
+              </li>
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Указанны запасные шрифты
+                </label>
+              </li>
+              <li>
+                <p>
+                  Возможна ситуация в которой пользователь не сможет получить кастомный шрифт. Для этого надо дополнительно указывать на какой шрифт заменять, если нет доступа к первому. Можно отдать все на волю ОС и  браузера и указать только семейство(sans-serif, serif, monospace, cursive, fantasy).
+                </p>
+              </li>
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Использована одинаковая высота линий
+                </label>
+              </li>
+              <li>
+                <p>
+                  Имеется ввиду не все линии должны быть 24px, а к примеру 120%. Разная высота линий в разных блоках и вуаля, макет уже смотрится по другому, целевое действие уже не на первом экране.
+                </p>
+              </li>
+              <li class="list__head"><h5 class="">Для справки:</h5></li>  
+              <li class="info">
+                <p>
+                  Во всех браузерах стандартным шрифтом является 16px.
+                </p>
+                <p>
+                  Есть относительная единица измерения em, она задается относительна размера шрифта, т.е. При 16px, 1em будет равен 16px. Таким образом можно удобно масштабированть целый блок или даже всю страница изменив значения шрифта в блоке родителе. <br>
+                  Использование базового значения шрифта и относительной единицы измерения em позволяет гарантировать читабельность контента на любых устройствах до и после Джобса.
+                </p>                
               </li>
             </ul>
 
             <!-- $Internal File Org -->
             <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Internal File Organization</h3></li>
+              <li class="list__head"><h3 class="list__title">Макет</h3></li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Layers Named Appropriately & Semantically
+                  Установлен цветовой профиль sRGB 
                 </label>
+              </li>
+              <li>
+                <p>
+                  <a href="http://habrahabr.ru/post/220681/">Здесь описанно почему</a>
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Organized Modules within Folders
+                  Все по папочкам
                 </label>
+              </li>
+              <li>
+                <p>Просто удобно</p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Deleted Unwanted Layers
+                  Удаленны ненужные слои
                 </label>
+              </li>
+              <li>
+                <p>Найду и сверстаю!</p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Globalized Common Elements
+                  Слои/папки названны
                 </label>
+              </li>
+              <li>
+                <p>Про группировку описанно в <a href="http://habrahabr.ru/post/220681/">статейке, пункт 3</a></p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Used Smart Objects (if Allowed)
+                  Использованны svg (и сохранены рядом)
                 </label>
+              </li>
+              <li>
+                <p>
+                  Экраны становятся все более четкими, пиксели плотнее и на блестящем айфончике пнг 48*48 выгледит уже не так хорошо, хотя вокруг все сверкает и радует Стива. Поэтому монохромные изображения, элементы, в общем все что есть вектор, лучше и оставить вектором.
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Included module states on separate layers and properly labeled
+                  Состояния элементов отдельно от макета.
                 </label>
-                <p>(<em>i.e. Link Hovered, Window Scrolled</em>)</p>
+                <p>(<em>Отдельная папка в макете или отдельный файл</em>)</p>
+              </li>
+              <li>
+                <p>
+                  Позволяет удостовериться что для всех кнопок/ссылок есть состояния, чтобы избежать мелких вопросов, которые сильно отвлекают
+                </p>
+                <p>
+                  Есть три основных состояния, и одно не обязательное, т.к. по умолчанию есть в браузере, если предусмотренна блокировка элементов, то добавляется еще одно.
+                </p>
+                <table>
+                  <tr>
+                    <td>Основное</td>
+                    <td>Наведение</td>
+                    <td>Нажатие</td>
+                    <td>Фокус</td>
+                    <td>Выключена</td>
+                  </tr>
+                  <tr>
+                    <td><button class="btn btn-primary">Simple</button></td>
+                    <td><button class="btn btn-primary hover">Hover</button></td>
+                    <td><button class="btn btn-primary active">Active</button></td>
+                    <td><button class="btn btn-primary focus">Focus</button></td>
+                    <td><button class="btn btn-primary disabled">Disabled</button></td>
+                  </tr>
+                </table>
+                [<a href="http://habrahabr.ru/post/145295/">Пример</a>]
+              </li>
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Линейки стоят между пикселями
+                </label>
+              </li>
+              <li>
+                <p>
+                  <img src="http://habrastorage.org/getpro/habr/post_images/090/76c/617/09076c61777419f77bc2477eb63ba8e7.jpg" alt=""> <br>
+                  Даже если верстальщик был внимателен и заметил это, то все равно встаёт вопрос: куда всё таки дизайнер хотел поставить направляющую — левее или правее?[<a href="http://habrahabr.ru/post/220681/">5</a>]
+                </p>
+                <p><img src="http://habrastorage.org/getpro/habr/post_images/dc8/8a8/abd/dc88a8abd8b405ea91c0185166ea1de8.jpg" alt=""></p>
+              </li> 
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Слои/папки раскрашенны цветами в зависимости от роли
+                </label>                
+              </li>
+              <li>
+                <p>Поздравляю, вы сбили единорога.</p>
               </li>
             </ul>
 
             <!-- $Design Practices -->
             <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Design Practices</h3></li>
+              <li class="list__head"><h3 class="list__title">Сетка/Адапт</h3></li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Color profile set as RGB
+                  Использован подход MOBILE FIRST
                 </label>
+              </li>
+              <li>
+                <p>
+                  ТЛДР: Создается дизайн для самого маленького экрана, куда помещается основное назначение сайта. Потом создается дизайн для экранов побольше, куда уже добавляются неинформативные красивости.
+                  Полностью: <a href="http://www.abookapart.com/products/mobile-first">Книга из "A list apart"</a>, так же есть у нас в библикотеке(<em>желтенкая</em>).
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Comp Contains Whole Pixel Values
+                  Использована сетка
                 </label>
               </li>
               <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Created a Grid and Included Guides for Grid System
-                </label>
-                <p>(<em>also consider sharing <a href="//guideguide.me">guideguide</a> settings across teams</em>)</p>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Fallback Interactions for Hover Based Events
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Used Dropshadows Sparingly
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Used Licensed Icons/Photos
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Appropriate Favicons Created
-                </label>
-                <p>(<em>Favicons appear in the tab of your browser in order to help identify. Favicons render in the browser tab at 16 x 16 and as large as 144 x 144 for apple icons</em>)</p>
-              </li>
+                <p>
+                  Три колонки тоже сетка, <a href="http://css-tricks.com/dont-overthink-it-grids/">do not overthink it</a>. <br>
+                  Позволяют удобнее делать адапт, с моей стороны.
+                </p>
+                <p><a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Подробнее</a>, <a href="http://guideguide.me/">Инструментик</a></p>
+              </li>                     
             </ul>
 
-            <!-- $Filters -->
+            <!-- $Layers -->
             <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Filters</h3></li>
+              <li class="list__head"><h3 class="list__title">Слои</h3></li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Overlays Are Appropriate and used Sparingly
+                  Фильтры использованы только на статичных элементах
                 </label>
+              </li>
+              <li>
+                <p>
+                  К сожалению применить фильтр может далеко не каждый, вернее каждый, но нужен правильный браузер и галочка в скрытых настройках.
+                  Посмотретреть сколько пользователей сможет увидеть красивый анимированный эффект осветления изображения можно <a href="http://caniuse.com/#feat=css-filters">здесь</a>.
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  CSS Support has been considered and researched
+                  Стиль слоя(если это не фото) не склеен
                 </label>
               </li>
-            </ul>
-
-            <!-- $Type -->
-            <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Typography</h3></li>
               <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Web Font Kit &lt; 250k
-                </label>
+                <p>
+                  Посмотрим, какие стили слоя в Photoshop имеют полную или частичную возможность реализации с помощью CSS (без использования картинок):
+                  <img src="http://habrastorage.org/getpro/habr/post_images/d42/2fd/6f5/d422fd6f5794e138eebcfadfcd0d9c24.jpg" alt="">
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Font-sizes smaller than 14-16px render well and are hinted properly for the Web
-                </label>
-                <p>(<em><a href="//webfontspecimen.com">Web Font Specimen</a></em>)</p>
+                  Фигуры/текст не растянуты
+                </label>                
+              </li>
+              <li>
+                <p>
+                  Прошли времена вёрстки скругленных уголков картинками. Каждый уважающий себя браузер умеет скруглять углы с помощью CSS-свойства border-radius, чем и пользуются верстальщики.[<a href="http://habrahabr.ru/post/220681/">5</a>]
+                </p>
+                <p>
+                  <h3>NO</h3>
+                  <img src="http://photoshopetiquette.com/images/examples/11_bad.png" alt="">[<a href="http://photoshopetiquette.com/#images">4</a>]
+                </p>
               </li>
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
-                  Licensed Fonts Made Available
-                </label>
-              </li>
+                  Слои текста не занимают более, чем нужно
+                </label>                
+              </li> 
               <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Unchecked Paragraph Hyphenation
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Documentation Outlining Typographic Scale/Styles
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Equivalent Web Fonts Listed
-                </label>
-                <p>(<em>If comp fonts are not available through a Web Font service</em>.)</p>
-              </li>
-            </ul>
-
-            <!-- $Imagery -->
-            <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Images</h3></li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Shapes Aren't Stretched
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Masks Globalized
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Vectors Processed as Smart Objects
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Created Various Desired Resolutions
-                </label>
-                <p>(<em><a href="http://www.smashingmagazine.com/2014/05/12/picturefill-2-0-responsive-images-and-the-perfect-polyfill">Read More about Picturefill</a></em>)</p>
-              </li>
-            </ul>
-
-            <!-- $Vector -->
-            <!-- http://filamentgroup.com/lab/artifact-austin-svg-workflow -->
-            <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Vector</h3></li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Create Separate Artboards
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Combine Paths and Unite with Pathfinder
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Combine Strokes
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Avoided 3D Effects, Blurs, Blend Modes and Drop-
-                Shadows
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Small Proportions Make Sense
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Exported and saved as SVG
-                </label>
-                <p>(<em><a href="http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc">following these steps</a></em>)</p>
-              </li>
-            </ul>
-
-            <!-- $Exporting Prep -->
-            <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Before Exporting</h3></li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Proofread
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Compare Against Mockups/Wireframes
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Account for All Images
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Verified Browser Compatibility
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Consistency Check
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Packaged fonts as a .zip
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Clean up unused and nested layers
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Packaged comp as a .zip
-                </label>
-                <p>(<em>lowers the file size for developers to download</em>)</p>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Included Favicons
-                </label>
-                <p>(<em>Favicons appear in the tab of your browser in order to help identify and add a touch of flare to a site. Favicons render in the browser tab at 16 x 16 and as large as 144 x 144 for apple icons</em>)</p>
-              </li>
-            </ul>
-
-            <!-- $Exporting -->
-            <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Exporting</h3></li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Save for Web & Devices
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Choose Progressive
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Conserve File Size
-                </label>
-              </li>
-              <li>
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Export as RGB Color Profile.
-                </label>
+                <p>
+                  Вот об этом:
+                  <img src="http://photoshopetiquette.com/images/examples/19_bad.png" alt=""><br>
+                  Так же хорошо использовать для разных надписей разныеслои текста, позволяет легче узнать начертание, гарнитуру и кегль.
+                  <img src="http://photoshopetiquette.com/images/examples/20_good.png" alt="">
+                </p>
               </li>
             </ul>
 
@@ -534,16 +451,29 @@
         </section>
 
         <footer>
+          <p class="wrap">
+            Любые пожелания/требования/жалобы/хейт присылайте на <a href="mailto:dev3@webformula.pro">dev3@webformula.pro</a> или же на <a href="https://github.com/Winni-/webdesignerschecklist">Гит хабе</a>
+          </p>
+          <p class="wrap">
+            Использованны следующие источники:
+            <ul class="design-list">
+              <li><a href="http://ilovepsd.ru/">http://ilovepsd.ru/</a></li>
+              <li><a href="http://habrahabr.ru/post/145295/">http://habrahabr.ru/post/145295/</a></li>
+              <li><a href="http://webdesignerschecklist.com/">http://webdesignerschecklist.com/</a></li>
+              <li><a href="http://photoshopetiquette.com/">http://photoshopetiquette.com/</a></li>
+              <li><a href="http://habrahabr.ru/post/220681/">http://habrahabr.ru/post/220681/</a></li>
+            </ul>
+          </p>
           <p class="wrap">Thanks to <a href="http://photoshopetiquette.com">Dan Rose</a> for the inspiration, <a href="//garlicjs.org">Garlicjs</a> for the persistent checkboxes, <a href="//yeoman.io">Yeoman</a> for the tooling, Jardson A., Aaron Dodson & SuperAtic LABS for icons via <a href="http://thenounproject.com">The Noun Project</a> and <a href="https://edgewebfonts.adobe.com/fonts#/?class=sans-serif&recommendedFor=headings&weight=regular&width=regular&collection=source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all">Adobe Edge Webfonts</a> for Source Sans Pro.<br>Contribute on <a href="//github.com/grayghostvisuals/webdesignerschecklist">GitHub</a></p>
         </footer>
       </main>
     </div>
 
-    <a href="//github.com/grayghostvisuals/webdesignerschecklist" class="fork-ribbon"><span class="octicon octicon-repo-forked"></span> Fork on GitHub</a>
+    <a href="https://github.com/Winni-/webdesignerschecklist" class="fork-ribbon"><span class="octicon octicon-repo-forked"></span>Fork on GitHub</a>
 
     <script src="scripts/4776dee8.vendor.js"></script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/garlic.js/1.2.2/garlic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/garlic.js/1.2.2/garlic.min.js"></script>
 
     <script src="scripts/0b813030.main.js"></script>
 </body>
