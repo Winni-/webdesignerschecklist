@@ -185,8 +185,8 @@
               </li>
               <li>
                 <p>
-                  Очевидное, может добавится пункт в горизонтальном меню.
-                  Шрифты в разных ОС и в разных браузерах рендерятся по разному, в каком-то надпись может стать жирнее, поэтому недопустимо, чтобы размер кнопки был впритык.
+                  Очевидное - может добавится пункт в горизонтальном меню. <br>
+                  Не очевидное - шрифты в разных ОС и в разных браузерах рендерятся по разному, в каком-то надпись может стать жирнее, поэтому недопустимо, чтобы размер кнопки был впритык.
                   Разные языки так же в этом пункте.
                 </p>
               </li>
@@ -238,7 +238,7 @@
 
             <!-- $Internal File Org -->
             <ul class="design-list">
-              <li class="list__head"><h3 class="list__title">Макет</h3></li>
+              <li class="list__head"><h3 class="list__title">Макет</h3></li>              
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
@@ -330,6 +330,20 @@
                 <label class="control checkbox">
                   <input type="checkbox">
                   <span class="control-indicator"></span>
+                  Создан "гайдлайн" для приемников
+                </label>
+              </li>
+              <li>
+                <p>
+                  <img src="images/Пример-Гайдлайна.png" alt=""> <br>
+                  -Вот так я представляю этот "Гайдлайн".
+                  Позволит избежать нескольких вариантов синей кнопки(имеется ввиду разница процентов на 5, а не на 15). Если вы выполнили этот пункт, то предъидущей считайте выполненым тоже.                  
+                </p>                
+              </li> 
+              <li>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
                   Линейки стоят между пикселями
                 </label>
               </li>
@@ -339,7 +353,7 @@
                   Даже если верстальщик был внимателен и заметил это, то все равно встаёт вопрос: куда всё таки дизайнер хотел поставить направляющую — левее или правее?[<a href="http://habrahabr.ru/post/220681/">5</a>]
                 </p>
                 <p><img src="http://habrastorage.org/getpro/habr/post_images/dc8/8a8/abd/dc88a8abd8b405ea91c0185166ea1de8.jpg" alt=""></p>
-              </li> 
+              </li>               
               <li>
                 <label class="control checkbox">
                   <input type="checkbox">
@@ -350,8 +364,7 @@
               <li>
                 <p>Поздравляю, вы сбили единорога.</p>
               </li>
-            </ul>
-
+            </ul> 
             <!-- $Design Practices -->
             <ul class="design-list">
               <li class="list__head"><h3 class="list__title">Сетка/Адапт</h3></li>
@@ -424,9 +437,10 @@
                 <p>
                   Прошли времена вёрстки скругленных уголков картинками. Каждый уважающий себя браузер умеет скруглять углы с помощью CSS-свойства border-radius, чем и пользуются верстальщики.[<a href="http://habrahabr.ru/post/220681/">5</a>]
                 </p>
-                <p>
+                
                   <h3>NO</h3>
-                  <img src="http://photoshopetiquette.com/images/examples/11_bad.png" alt="">[<a href="http://photoshopetiquette.com/#images">4</a>]
+                <p>  
+                  <img src="http://photoshopetiquette.com/images/examples/11_bad.png" alt=""><br>[<a href="http://photoshopetiquette.com/#images">4</a>]
                 </p>
               </li>
               <li>
@@ -445,8 +459,104 @@
                 </p>
               </li>
             </ul>
+            <div class="sizes">
+              <h3 class="list__title">Размеры</h3>
+              <p>
+                <em>Я делаю макет. Какого размера мне создать холст?</em>
+              </p>
+              <p> Мажорные разрешения(px):
+                <table>
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td>Телефон вертикально</td>
+                      <td>Телефон горизонтально</td>
+                      <td>Планшет вертикально</td>
+                      <td>Планшет горизонтально</td>
+                      <td>Ноутбук</td>
+                      <td>Десктоп</td>
+                      <td>2к</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ширина</td>
+                      <td>320</td>
+                      <td>480</td>
+                      <td>768</td>
+                      <td>1024</td>
+                      <td>1280</td>
+                      <td>1920</td>
+                      <td>2560</td>
+                    </tr>
+                    <tr>
+                      <td>Высота</td>
+                      <td>480</td>
+                      <td>320</td>
+                      <td>1024</td>
+                      <td>768</td>
+                      <td>768</td>
+                      <td>1080</td>
+                      <td>1440</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+              <p>
+                Не забываем, что имеются полосы прокрутки и тулбары, т.е. экран десктопа в реальности покажет только 1903 × 962, а то и меньше по вертикали. Конечно страница без прокрутки будет иметь ширину в 1920.
+              </p>
+              <h2>Так под какое разрешение мне рисовать?</h2>
+              <p>
+                Коротко: <strong>1920</strong> <br>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 1920px
+                </label>  
+              </p>
+              <p>
+                Подробнее: <br>
+                Обязательно нарисовать каждую страницу в одном разрешении, десктопном. Чтобы не было отвлекающих вопросов, страницы надо нарисовать, на тех размерах, на которых меняется расположение блоков, сетка, либо кардинально меняются элементы(<em>либо одну страницу, если меняются общие элементы</em>).
+              </p>
+              <p>
+                Рисовать дополнительные макеты необходимости нет, если дизайнера полностью устраивает результат получившийся у верстальщика. Так же можно подойти и на месте подправить не устраивающие элементы.
+              </p>
+              <p>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 1280px
+                </label> <br><br> 
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 1024px
+                </label> <br><br>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 800px
+                </label><br> <br> 
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 500px
+                </label> <br><br>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 320px
+                </label> <br><br>
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Макет шириной 2560px
+                </label> 
+              </p>
 
-            <input type="reset" id="cklist-reset" value="Reset">
+            </div>
+
+            <input type="reset" id="cklist-reset" value="Сбросить">
           </form>
         </section>
 

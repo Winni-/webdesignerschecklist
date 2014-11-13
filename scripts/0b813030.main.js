@@ -8,12 +8,16 @@ $(function() {
 		$big.css({
 			"position": "fixed",
 			"top": "50%",
-			"left": "50%",
-			"margin-left": -($big.width()/2),
-			"margin-top": -($big.height()/2),
+			"left": "50%",			
 			"z-index": "1",
-			"cursor": "pointer"
+			"cursor": "pointer",
+			"max-height": $(window).height(),
+			"max-width": $(window).width()			
 		});
+		$big.css({
+			"margin-left": -( Math.min($("#big").width(),$(window).width()) /2),
+			"margin-top": -( Math.min($("#big").height(),$(window).height()) /2)
+		})
 		$big.on("click",function() {
 			$(this).remove();
 			$big = $("#big");
